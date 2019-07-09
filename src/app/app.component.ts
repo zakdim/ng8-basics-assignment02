@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ng8-basics-assignment02';
+  username: string = '';
+
+  isUsernameEmpty() {
+    return this.username.trim() === '';
+  }
 }
